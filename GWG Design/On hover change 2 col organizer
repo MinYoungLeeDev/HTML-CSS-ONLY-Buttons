@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function showDay(dayIndex) {
+      var days = document.getElementsByClassName("day");
+      for (var i = 0; i < days.length; i++) {
+        if (i === dayIndex) {
+          days[i].style.display = "block";
+        } else {
+          days[i].style.display = "none";
+        }
+      }
+    }
+
+    // Show the schedule for the first day on page load
+    document.addEventListener("DOMContentLoaded", function() {
+      showDay(0);
+    });
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .schedule {
+      max-width: 420px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr; /* Adjust the column width as needed */
+      grid-gap: 10px;
+    }
+
+    .day {
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .date {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .event {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+    }
+
+    .time {
+      font-weight: bold;
+    }
+
+    .title {
+      margin: 0;
+    }
+
+    ul {
+      margin-top: 0;
+      padding-left: 30px;
+    }
+
+    .day-btn-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .day-btn {
+      flex-grow: 1;
+      padding: 15px 15px;
+      background-color: #30d2ff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 15px;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .day-btn:hover {
+      background-color: black;
+    }
+  </style>
+  <script>
+    function showDay(dayIndex) {
+      var days = document.getElementsByClassName("day");
+      for (var i = 0; i < days.length; i++) {
+        if (i === dayIndex) {
+          days[i].style.display = "block";
+        } else {
+          days[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="schedule">
+    <div class="day-btn-container">
+      <div class="day-btn" onmouseover="showDay(0)">July 19th</div>
+      <div class="day-btn" onmouseover="showDay(1)">July 20th</div>
+      <div class="day-btn" onmouseover="showDay(2)">July 21st</div>
+    </div>
+    <div class="day">
+      <div class="date">July 19th</div>
+      <div class="event">
+        <div class="time">9:00-9:15</div>
+        <div class="title">Introduction</div>
+      </div>
+      <div class="event">
+        <div class="time">9:15-11:00</div>
+        <div class="title">Model Organisms vs Non-Models</div>
+        <ul>
+          <li>Julia Davydova</li>
+          <li>Kate Adamala</li>
+          <li>Johanna Kowalko</li>
+        </ul>
+      </div>
+      <div class="event">
+        <div class="time">11:00-12:30</div>
+        <div class="title">Flash Talks and Posters</div>
+      </div>
+      <div class="event">
+        <div class="time">12:30-14:00</div>
+        <div class="title">Lunch</div>
+      </div>
+      <div class="event">
+        <div class="time">14:00-16:00</div>
+        <div class="title">Building a Biotech Business Panel</div>
+        <ul>
+          <li>Shawn Carbonell</li>
+          <li>Mary MacCarthy</li>
+          <li>Stephen Russel</li>
+        </ul>
+      </div>
+      <div class="event">
+        <div class="time">16:15-17:30</div>
+        <div class="title">Redefining GE Career Options Panel</div>
+        <ul>
+          <li>Juan Armando Casas-Mollano</li>
+          <li>Katie Leehy</li>
+          <li>Fay Lin</li>
+        </ul>
+      </div>
+    </div>
+    <div class="day">
+      <div class="date">July 20th</div>
+      <div class="event">
+        <div class="time">9:00-10:00</div>
+        <div class="title">Coffee and Networking</div>
+      </div>
+      <div class="event">
+        <div class="time">10:00-12:10</div>
+        <div class="title">New Tools</div>
+        <ul>
+          <li>Santiago Castillo</li>
+          <li>Primera Therapeutics</li>
+          <li>James Brown</li>
+        </ul>
+      </div>
+      <div class="event">
+        <div class="time">12:10-13:25</div>
+        <div class="title">Rosalind Franklin Society Medal Keynote</div>
+      </div>
+      <div class="event">
+        <div class="time">13:35-15:05</div>
+        <div class="title">Regulation, Ethics, and Safety</div>
+        <ul>
+          <li>Adam Moyer</li>
+          <li>Beth Vitalis</li>
+        </ul>
+      </div>
+      <div class="event">
+        <div class="time">15:20-16:20</div>
+        <div class="title">Posters</div>
+      </div>
+      <div class="event">
+        <div class="time">16:20-17:40</div>
+        <div class="title">Cell & Gene Therapy Advances</div>
+        <ul>
+          <li>Vignesh Rajendiran</li>
+          <li>Kris Saha</li>
+          <li>Stephen Russel</li>
+        </ul>
+      </div>
+      <div class="event">
+        <div class="time">17:40-1:15</div>
+        <div class="title">Dinner</div>
+      </div>
+      <div class="event">
+        <div class="time">18:55-19:55</div>
+        <div class="title">Dr. Alta Choro Keynote</div>
+      </div>
+    </div>
+    <div class="day">
+      <div class="date">July 21st</div>
+      <div class="event">
+        <div class="time">9:00-10:00</div>
+        <div class="title">Coffee and Networking</div>
+      </div>
+      <div class="event">
+        <div class="time">10:00-11:20</div>
+        <div class="title">Agriculture</div>
+        <ul>
+          <li>Pairwise Plants</li>
+          <li>Yinong Yang</li>
+        </ul>
+      </div>
+      <div class="event">
+        <div class="time">11:45-13:05</div>
+        <div class="title">Synthetic Biology & Other</div>
+        <ul>
+          <li>Margarita Romanenko</li>
+          <li>Adam Smiley Zbiotics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
