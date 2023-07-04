@@ -1,0 +1,61 @@
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.time {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 130px; /* Set a fixed width for the time column */
+}
+
+.content {
+  margin-bottom: 10px;
+  flex-grow: 1; /* Allow the content column to grow and take up remaining space */
+}
+
+.content b:first-child {
+  font-weight: bold; /* Set the first line of content to bold */
+}
+
+.container > .row:hover {
+  background-color: #30d2ff;
+}
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="time">9:00-10:00</div>
+    <div class="content">Coffee and Networking</div>
+  </div>
+  
+  <div class="row">
+    <div class="time">10:00-11:20</div>
+    <div class="content">
+      <b>Agriculture</b><br>
+      Pairwise Plants<br>
+      Yinong Yang
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="time">11:45-13:05</div>
+    <div class="content">
+      <b>Synthetic Biology & Other</b><br>
+      Margarita Romanenko<br>
+      Adam Smiley Zbiotics
+    </div>
+  </div>
+</div>
