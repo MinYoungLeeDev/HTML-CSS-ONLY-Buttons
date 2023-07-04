@@ -1,0 +1,92 @@
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.time {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 130px; /* Set a fixed width for the time column */
+}
+
+.content {
+  margin-bottom: 10px;
+  flex-grow: 1; /* Allow the content column to grow and take up remaining space */
+}
+
+.content b:first-child {
+  font-weight: bold; /* Set the first line of content to bold */
+}
+
+.container > .row:hover {
+  background-color: #30d2ff;
+}
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="time">9:00-10:00</div>
+    <div class="content">Coffee and Networking</div>
+  </div>
+  
+  <div class="row">
+    <div class="time">10:00-12:10</div>
+    <div class="content">
+      <b>New Tools</b><br>
+      Santiago Castillo<br>
+      Primera Therapeutics<br>
+      James Brown
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="time">12:10-13:25</div>
+    <div class="content">Rosalind Franklin Society Medal Keynote</div>
+  </div>
+  
+  <div class="row">
+    <div class="time">13:35-15:05</div>
+    <div class="content">
+      <b>Regulation, Ethics, and Safety</b><br>
+      Adam Moyer<br>
+      Beth Vitalis
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="time">15:20-16:20</div>
+    <div class="content">Posters</div>
+  </div>
+  
+  <div class="row">
+    <div class="time">16:20-17:40</div>
+    <div class="content">
+      <b>Cell & Gene Therapy Advances</b><br>
+      Vignesh Rajendiran<br>
+      Kris Saha<br>
+      Stephen Russel
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="time">17:40-18:15</div>
+    <div class="content">Dinner</div>
+  </div>
+  
+  <div class="row">
+    <div class="time">18:55-19:55</div>
+    <div class="content">Dr. Alta Choro Keynote</div>
+  </div>
+</div>
